@@ -6,6 +6,7 @@
 		<title>My Mind</title>
 		<link rel="icon" href="favicon.ico" />
 		<script src="my-mind.js"></script>
+		<script src="time.js"></script>
 		<script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
 		<script src="https://cdn.firebase.com/js/simple-login/1.5.0/firebase-simple-login.js"></script>
 		<link rel="stylesheet" href="css/font.css" />
@@ -15,7 +16,7 @@
 	</head>
 	<body>
 		<ul id="port">
-			<div id="tip">Press ‘Tab’ to Insert Child, ‘Enter’ to Insert Sibling Node. For more tips/news, follow <a href="https://twitter.com/my_mind_app">@my_mind_app</a>.</div>
+			<div id="tip">Press ‘Tab’ to Insert Child, ‘Enter’ to Insert Sibling Node. For more tips/news.</div>
 		</ul>
 
 		<div class="ui">
@@ -73,6 +74,15 @@
 					<a data-color="#79a0d9" title="Cyan" href="#"></a>
 					<a data-color="#eebecd" title="Pink" href="#"></a>
 					<a data-color="#db6d32" title="Orange" href="#"></a>
+				</span>
+			</p>
+			<p>
+				<span>Time</span>
+				<span id="timer">
+					<input type="text" value="">
+					<input type="text" value="">
+					<input class="timer_botton" type="button" value="Start" onclick="cntStart()">
+					<input class="timer_botton" type="button" value="Reset" onclick="cntStop()">
 				</span>
 			</p>
 
