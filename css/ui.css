@@ -28,7 +28,7 @@ button:not(:disabled) {
 	text-align: center;
 }
 
-.ui select, .ui input {
+.ui select, .ui input, .ui form {
 	background-color: transparent;
 	border: 1px solid rgba(50, 70, 90, 0.5);
 	font-size: 13px;
